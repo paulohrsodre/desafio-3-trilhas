@@ -1,0 +1,46 @@
+@import url("./card.css");
+
+.pagina__sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sobre__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre__descricao-apresentacao {
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.sobre__descricao-apresentacao span {
+    font-weight: 700;
+}
+
+.sobre__descricao-resumo {
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.sobre__hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sobre__descricao-hobbies {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sobre__hobbies-cards {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+@import url("./geral.css");
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    padding: 20px;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape img {
+    width: 70px;
+}

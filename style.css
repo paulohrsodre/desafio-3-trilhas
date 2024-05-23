@@ -1,0 +1,124 @@
+@import url("./css/paginas.css");
+@import url("./css/reset.css");
+@import url("./css/geral.css");
+
+
+/* ESTILOS DO CONTAINER */
+
+.container {
+    max-height: 100vh;
+}
+
+/* ESTILOS DE TEXTO */
+
+.container__info {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container__info-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.info__texto-saudacao {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.info__texto-titulo {
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.info__texto-titulo span {
+    font-family: var(--fonte-especial);
+    font-weight: 500;
+    color: var(--cor-principal);
+    text-shadow: var(--cor-de-fundo) 2px 3px 2px;
+}
+
+.info__texto-profissao {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--cor-principal);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.info__texto-resumo {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    font-family: var(--fonte-secundaria);
+}
+
+/* ESTILOS DA IMAGEM */
+
+.container__info-foto {
+    background-color: var(--cor-de-fundo);
+    position: relative;
+    height: 100%;
+}
+
+.container__info-foto img {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ESTILLOS DO MENU FLUTUANTE */
+
+.container__foto-menu {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    padding: 0 20px;
+}
+
+.foto__menu-flutuante {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--cor-principal);
+    padding: 20px 10px;
+    border-radius: 25px;
+}
+
+.foto__menu-flutuante-item {
+    cursor: pointer;
+}
+
+.foto__menu-flutuante-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.foto__menu-flutuante-item:hover img {
+    color: var(--cor-do-hover);
+}
+
+.item-icon {
+    color: white;
+}
+
+/* ESTILOS DO LINK */
+
+.info__link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}

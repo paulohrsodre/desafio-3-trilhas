@@ -1,0 +1,92 @@
+@import url("./contato.css");
+@import url("./portfolio.css");
+@import url("./habilidades.css");
+@import url("./sobre.css");
+@import url("./rodape.css");
+@import url("./reset.css");
+@import url("./geral.css");
+@import url("../style.css");
+
+.container_paginas {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-de-fundo-body);
+}
+
+.container__pagina-cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabecalho__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho__menu-lateral {
+    flex: 1;
+    padding: 20px;
+    background: var(--cor-principal);
+}
+
+.menu__lateral-lista {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu__lateral-item a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+
+.menu__lateral-item:hover a{
+    font-weight: 800;
+    color: var(--cor-do-hover);
+    cursor: pointer;
+}
+
+.container__paginas-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 250px);
+    max-width: 100%;
+    height: 100%;
+    margin-left: 250px;
+    padding: 80px 150px 0 120px;
+    box-sizing: border-box;
+}
+
+.container__pagina-conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pagina-conteudo__titulo {
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--cor-secundaria);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-secundaria);
+}
+
+

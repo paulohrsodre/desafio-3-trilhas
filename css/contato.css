@@ -1,0 +1,70 @@
+.pagina__contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.pagina__contato-descricao {
+    align-self: center;
+    justify-self: center;
+    font-size: 32px;
+    font-family: var(--fonte-secundaria);
+    padding: 60px 0 40px 0;
+}
+
+.container__contatos {
+    display: flex;
+    gap: 20px;
+}
+
+.contatos__info {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+}
+
+/* .contatos__info:nth-child(2) {
+    justify-content: flex-end;
+    gap: 40px;
+} */
+
+.contatos__info img {
+    width: 100px;
+}
+
+.contatos__midia-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    font-size: 24px;
+}
+
+.midia__lista-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.midia__lista-item img {
+    width: 24px;
+}
+
+.midia__lista-item a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.pagina__contato-agradecimento {
+    align-self: center;
+    justify-self: center;
+    font-size: 32px;
+    font-family: var(--fonte-secundaria);
+    padding: 20px 0 60px 0;
+}
