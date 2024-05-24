@@ -61,6 +61,20 @@
     color: var(--cor-secundaria);
 }
 
+.link-linkedin {
+    display: flex;
+    gap: 8px;
+}
+
+.link-linkedin:hover {
+    color: var(--cor-do-hover);
+    font-weight: 600;
+}
+
+.link-linkedin:hover svg {
+    fill: var(--cor-do-hover);
+}
+
 .pagina__contato-agradecimento {
     align-self: center;
     justify-self: center;

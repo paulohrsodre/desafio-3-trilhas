@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
                     const svgElement = svgDoc.querySelector('svg');
 
-                    svgElement.setAttribute('fill', '#3B82F6');
+                    svgElement.setAttribute('fill', 'var(--cor-do-hover)');
 
                     img.replaceWith(svgElement);
                 })
