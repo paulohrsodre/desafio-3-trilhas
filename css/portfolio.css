@@ -49,3 +49,14 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+@media screen and (max-width: 320px) {
+    .galeria__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagina__portfolio-descricao {
+        font-size: 24px;
+    }
+}

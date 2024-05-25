@@ -82,3 +82,25 @@
     font-family: var(--fonte-secundaria);
     padding: 20px 0 60px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .container__contatos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contatos__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .midia__lista-item {
+        font-size: 16px;
+    }
+
+    .contatos__midia-lista p {
+        font-size: 16px;
+    }
+}

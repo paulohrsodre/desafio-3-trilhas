@@ -8,6 +8,22 @@
 </head>
 <body>
     <div class="container_paginas">
+        <header class="container__menu-mobile">
+            <button class="toggle-container" id="menu" for="toggle">
+                <span class="button-toggle"></span>
+            </button>
+
+            <nav class="menu__mobile" id="menu__mobile">
+                <ul class="menu__mobile-lista">
+                    <li class="menu__mobile-item"><a href="../index.html">INÍCIO</a></li>
+                    <li class="menu__mobile-item"><a href="SobreMim.html">SOBRE MIM</a></li>
+                    <li class="menu__mobile-item"><a href="Habilidades.html">HABILIDADES</a></li>
+                    <li class="menu__mobile-item"><a href="Portfolio.html">PORTFÓLIO</a></li>
+                    <li class="menu__mobile-item"><a href="Contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
         <header class="container__pagina-cabecalho">
             <div class="cabecalho__foto">
                 <img src="../images/perfil.png" alt="Foto de perfil de Paulo Sodré">
@@ -160,6 +176,7 @@
         </main>
     </div>
 
+    <script src="../js/menu_mobile.js"></script>
     <script src="../js/menu_lateral.js"></script>
     <script src="../js/menu_flutuante.js"></script>
 </body>

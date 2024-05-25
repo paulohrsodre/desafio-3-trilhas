@@ -28,3 +28,14 @@
     align-self: center;
     justify-self: center;
 }
+
+@media screen and (max-width: 320px) {
+    .pagina__habilidades-descricao {
+        font-size: 24px;
+    }
+
+    .habilidades__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
