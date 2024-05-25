@@ -103,4 +103,8 @@
     .contatos__midia-lista p {
         font-size: 16px;
     }
+
+    .pagina__contato-agradecimento {
+        font-size: 28px;
+    }
 }
