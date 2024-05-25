@@ -1,3 +1,4 @@
+@import url("./css/menu_mobile.css");
 @import url("./css/paginas.css");
 @import url("./css/reset.css");
 @import url("./css/geral.css");
@@ -6,7 +7,11 @@
 /* ESTILOS DO CONTAINER */
 
 .container {
-    max-height: 100vh;
+    height: 100%;
+}
+
+.container__menu-mobile {
+    display: none;
 }
 
 /* ESTILOS DE TEXTO */
@@ -17,7 +22,7 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .container__info-texto {
@@ -25,16 +30,18 @@
     flex-direction: column;
     justify-content: center;
     gap: 60px;
-    padding: 60px;
+    margin: auto 60px;
 }
 
 .info__texto-saudacao {
-    font-size: 50px;
+    display: flex;
+    gap: 12px;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .info__texto-titulo {
-    font-size: 70px;
+    font-size: 64px;
     font-weight: 700;
     padding-bottom: 5px;
 }
@@ -47,7 +54,7 @@
 }
 
 .info__texto-profissao {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     background-color: var(--cor-principal);
     padding: 5px;
@@ -82,6 +89,7 @@
     top: 35%;
     right: 0;
     padding: 0 20px;
+    display: block;
 }
 
 .foto__menu-flutuante {
@@ -121,4 +129,67 @@
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container__menu-mobile {
+        display: block;
+    }
+
+    .container__info {
+        flex-direction: column;
+    }
+
+    .container__info-texto {
+        gap: 40px;
+    }
+
+    .container__info-foto {
+        width: 100%;
+        height: 50%;
+        background: var(--cor-de-fundo);
+    }
+
+    .container__foto-menu {
+        display: none;
+    }
+
+    .info__foto {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__info-foto img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container__info-texto{
+        gap: 30px;
+        margin: 60px 20px;
+    }
+
+    .info__texto-saudacao {
+        font-size: 32px;
+    }
+
+    .info__texto-titulo {
+        font-size: 48px;
+    }
+
+    .info__texto-profissao {
+        font-size: 12px;
+    }
+
+    .info__texto-resumo {
+        font-size: 16px;
+    }
+
+    .info__link {
+        font-size: 20px;
+    }
 }

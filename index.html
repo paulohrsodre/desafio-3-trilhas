@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfólio - Paulo Sodré</title>
 </head>
+
 <body>
     <div class="container">
+
+        <header class="container__menu-mobile">
+            <button class="toggle-container" id="menu" for="toggle">
+                <span class="button-toggle"></span>
+            </button>
+
+            <nav class="menu__mobile" id="menu__mobile">
+                <ul class="menu__mobile-lista">
+                    <li class="menu__mobile-item"><a href="../index.html">INÍCIO</a></li>
+                    <li class="menu__mobile-item"><a href="/pages/SobreMim.html">SOBRE MIM</a></li>
+                    <li class="menu__mobile-item"><a href="/pages/Habilidades.html">HABILIDADES</a></li>
+                    <li class="menu__mobile-item"><a href="/pages/Portfolio.html">PORTFÓLIO</a></li>
+                    <li class="menu__mobile-item"><a href="/pages/Contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <main class="container__info">
             <section class="container__info-texto">
                 <p class="info__texto-saudacao">OLÁ, BEM-VINDO!</p>
                 <div class="info__texto-titulacao">
-                    <h1 class="info__texto-titulo">EU SOU <span>PAULO</span></h1>
-                    <span class="info__texto-profissao">DESENVOLVEDOR DE SOFTWARE | ILUSTRADOR | PROGRAMADOR DE JOGOS</span>
+                    <h1 class="info__texto-titulo">EU SOU O <span>PAULO</span></h1>
+                    <span class="info__texto-profissao">DESENVOLVEDOR DE SOFTWARE | ILUSTRADOR</span>
                 </div>
-                <p class="info__texto-resumo">Estudante de programação, Web Designer e Programador Front-End. Também ilustro nas horas vagas e já trabalhei na área de desenvolvimento de jogos como Artista 2D. Cursando a trilha Programação de Jogos do Trilhas Inova MA, atualmente e em busca de novas oportunidades de aprimorar minhas Soft e Hard Skills, além de estar apto para os desafios do mercado de trabalho!</p>
+                <p class="info__texto-resumo">Estudante de programação, Web Designer e Programador Front-End. Também
+                    ilustro nas horas vagas e já trabalhei na área de desenvolvimento de jogos como Artista 2D. Cursando
+                    a trilha Programação de Jogos do Trilhas Inova MA, atualmente e em busca de novas oportunidades de
+                    aprimorar minhas Soft e Hard Skills, além de estar apto para os desafios do mercado de trabalho!</p>
 
                 <div>
                     <a href="./pages/SobreMim.html" class="info__link">SOBRE MIM!</a>
                 </div>
             </section>
             <section class="container__info-foto">
-                <div>
+                <div class="info__foto">
                     <img src="./images/perfil.png" alt="Foto de perfil de Paulo Sodré">
                 </div>
 
@@ -46,7 +67,8 @@
                         </li>
                         <li class="foto__menu-flutuante-item item-icon">
                             <a href="./pages/Portfolio.html">
-                                <img src="./images/portfolio-icon.svg" alt="Ícone de página portfólio - business center">
+                                <img src="./images/portfolio-icon.svg"
+                                    alt="Ícone de página portfólio - business center">
                             </a>
                         </li>
                         <li class="foto__menu-flutuante-item item-icon">
@@ -61,6 +83,8 @@
 
     </div>
 
+    <script src="./js/menu_mobile.js"></script>
     <script src="./js/menu_flutuante.js"></script>
 </body>
+
 </html>

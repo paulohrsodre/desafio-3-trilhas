@@ -9,6 +9,7 @@
     --cor-de-fundo: #D4D4D4;
     --cor-de-fundo-body: #E5E5E5;
     --cor-de-fundo-rodape: #F5F5F5;
+    --cor-branca: #FFFFFF;
     --cor-do-hover: #3B82F6;
     --fonte-principal: "Roboto", sans-serif;
     --fonte-secundaria: "Lato", sans-serif;
@@ -16,10 +17,9 @@
 }
 
 body {
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-size: 16px;
     font-family: var(--fonte-principal);
+    box-sizing: border-box;
 }

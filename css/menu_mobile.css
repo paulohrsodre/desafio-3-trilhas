@@ -1,0 +1,171 @@
+/* POSICIONAMENTO DO MENU */
+
+.menu__mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: #FFF;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+}
+
+.menu__mobile.is-open {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+}
+
+/* EFEITO DE ABERTURA */
+
+.menu__mobile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: var(--cor-principal);
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+}
+
+.menu__mobile.is-open::before {
+    transform: skew(-14deg) translateX(0);
+}
+
+/* EFEITOS DE APARECIMENTO DO MENU E ESTILOS */
+
+.menu__mobile .menu__mobile-lista {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%;
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+}
+
+.menu__mobile .menu__mobile-lista,
+.menu__mobile .menu__mobile-item {
+    list-style: none;
+    padding: 0;
+}
+
+.menu__mobile .menu__mobile-item {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
+}
+
+.menu__mobile a {
+    display: block;
+	padding: 20px 0;
+	color: var(--cor-secundaria);
+	font-size: 2em;
+	text-decoration: none;
+	font-weight: bold;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.menu__mobile.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu__mobile .menu__mobile-item:nth-child(1){
+    transition: all 275ms 175ms
+}
+.menu__mobile .menu__mobile-item:nth-child(2){
+    transition: all 275ms 225ms
+}
+.menu__mobile .menu__mobile-item:nth-child(3){
+    transition: all 275ms 275ms
+}
+.menu__mobile .menu__mobile-item:nth-child(4){
+    transition: all 275ms 325ms
+}
+.menu__mobile .menu__mobile-item:nth-child(5){
+    transition: all 275ms 375ms
+}
+
+/* DESENHO DO BOTÃO DO MENU MOBILE */
+
+.toggle-container {
+    position: absolute;
+	top: 15px;
+	padding-top: 20px;
+	right: 15px;
+	z-index: 1000;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.toggle-container:focus {
+    outline: none;
+}
+
+.button-toggle {
+    position: relative;
+	display: block;
+	width: 28px;
+	height: 4px;
+	margin: 0 auto;
+	background: var(--cor-secundaria);
+	transform: skew(5deg);
+	transition: all .275s;
+}
+
+.button-toggle::after,
+.button-toggle::before {
+    content: '';
+	display: block;
+	height: 100%;
+	background: var(--cor-secundaria);
+	transition: all .275s;
+}
+
+.button-toggle::after {
+    transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+
+.button-toggle::before {
+    transform: translateY(-16px) skew(-10deg);
+}
+
+.is-open .button-toggle {
+    transform: skew(5deg) translateY(-8px) rotate(-45deg);
+}
+
+.is-open .button-toggle::before {
+    transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+
+.is-open .button-toggle::after {
+    transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+}
+
+.container {
+	position: absolute;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	overflow: hidden;
+}
+
+@media screen and (max-width:321px) {
+    .menu__mobile.is-open::before {
+        transform: skew(-6deg) translateX(0);
+    }
+
+    .menu__mobile-item a {
+        font-size: 1.5em;
+    }
+}
