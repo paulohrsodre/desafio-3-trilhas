@@ -10,7 +10,6 @@ botaoMenu.addEventListener('click', function(e){
 let clickEvent = new Event('click');
 
 window.addEventListener('load', function(e) {
-	slowmo.dispatchEvent(clickEvent);
 	botaoMenu.dispatchEvent(clickEvent);
 	
 	setTimeout(function(){
