@@ -50,7 +50,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
     .galeria__items {
         display: flex;
         flex-direction: column;

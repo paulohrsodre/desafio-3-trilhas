@@ -167,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
     .container__info-texto{
         gap: 30px;
         margin: 60px 20px;
